@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitness Club</title>
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="MBd.css/style.css">
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Baloo 2', cursive;
+        /* From google fonts  */
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(3.JPEG);
+
+    }
+
+    .left {
+        display: inline-block;
+
+        position: absolute;
+        /* It sets relative to its parent and its parent id header here */
+
+        left: 30px;
+        top: 20px;
+    }
+
+    .left img {
+        filter: invert(-184%);
+
+        width: 112px;
+        height: 54px;
+
+    }
+
+    .left div {
+        line-height: 1px;
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .mid {
+        /* First block the display secondly set the width an last set the margin */
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+
+    }
+
+    .right {
+
+        position: absolute;
+        /* It sets relative to its parent and its parent id header here */
+
+        right: 30px;
+        top: 20px;
+        display: inline-block;
+
+    }
+
+    .navbar {
+        display: inline-block;
+        /* In inline block the material is in the line and you can also set height  and width*/
+
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        /* Text decoration is used to remove and add the underline words */
+        padding: 34px 15px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: teal;
+    }
+
+    .btn {
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        /* border is here  */
+        font-size: 10px;
+        cursor: pointer;
+        font-family: 'Baloo 2', cursive;
+
+    }
+
+    .btn:hover {
+        background-color: teal;
+
+    }
+
+    .container {
+        margin: 0px 8px;
+        /* background color is here  */
+        color: white;
+        padding: 4px 14px;
+        /* border is here  */
+        font-size: 10px;
+        cursor: pointer;
+        width: 40%;
+
+    }
+
+    .form-group input {
+        font-family: 'Baloo 2', cursive;
+        text-align: center;
+        display: block;
+        width: 344x;
+        padding: 22px;
+        /* border is here  */
+        margin: 16px auto;
+        border-radius: 8px
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        margin: auto;
+        width: 15%;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="logo.jpeg" alt="Error 404">
+            <div>
+                Fitness Club
+            </div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li> <a href="#">About us</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Log In</button><button class="btn">Sign In</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join our gym for being fit and healthy</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name here">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age here">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your adress here">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your disease(if any) here">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
